@@ -4,8 +4,8 @@
 
 ## 使用技術
 - Play Framework 2.8
-- Scala
-- sbt
+- Scala（version: 2.13.16）
+- sbt（version: 1.11.5）
 - pac4j
 
 ## 実行方法
