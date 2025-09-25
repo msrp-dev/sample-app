@@ -9,7 +9,6 @@
 - pac4j
 
 ## 実行方法
-以下のコマンドでアプリケーションを起動できます：
 
-ターミナル(WindowsPowerShell等)で、sample-appディレクトリに移動し、以下のコマンドを実行。
+ターミナル(WindowsPowerShell等)で、sample-appディレクトリに移動し、次のコマンドを実行。
 sbt run
