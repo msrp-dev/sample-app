@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\makot\playsample\conf\application.conf,C:\Users\makot\playsample\target\scala-2.13\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\makot\playsample\conf\keycloak-idp-metadata.xml,C:\Users\makot\playsample\target\scala-2.13\classes\keycloak-idp-metadata.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\makot\playsample\conf\logback.xml,C:\Users\makot\playsample\target\scala-2.13\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\makot\playsample\conf\messages,C:\Users\makot\playsample\target\scala-2.13\classes\messages)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\makot\playsample\conf\routes,C:\Users\makot\playsample\target\scala-2.13\classes\routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\makot\playsample\conf\samlKeystore.jks,C:\Users\makot\playsample\target\scala-2.13\classes\samlKeystore.jks)[0m
