@@ -11,4 +11,7 @@
 ## 実行方法
 
 ターミナル(WindowsPowerShell等)で、sample-appディレクトリに移動し、次のコマンドを実行。  
-sbt run
+sbt run  
+
+その後、ブラウザより以下にアクセス。  
+http://localhost:9000/
