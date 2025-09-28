@@ -9,6 +9,26 @@ import _root_.controllers.Assets.Asset
 // @LINE:7
 package controllers.javascript {
 
+  // @LINE:7
+  class ReverseHomeController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:7
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+  }
+
   // @LINE:10
   class ReverseAssets(_prefix: => String) {
 
@@ -73,80 +93,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profile"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:19
-  class ReverseCallbackRouter(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:19
-    def callback: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CallbackRouter.callback",
-      """
-        function() {
-        
-          if (true) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "callback"})
-          }
-        
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:7
-  class ReverseHomeController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:7
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:17
-  class ReverseSecuredController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:17
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SecuredController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "secured"})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.SecuredController.logout",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
         }
       """
     )

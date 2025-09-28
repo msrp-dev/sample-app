@@ -1,4 +1,4 @@
-package modules
+package securityModules
 
 import play.api.inject.{Binding, Module}
 import play.api.{Configuration, Environment}

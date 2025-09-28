@@ -1,4 +1,4 @@
-package modules
+package securityModules
 
 import javax.inject._
 import play.cache.SyncCacheApi

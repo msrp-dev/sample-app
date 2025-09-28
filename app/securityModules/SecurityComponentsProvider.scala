@@ -1,4 +1,4 @@
-package modules
+package securityModules
 
 import javax.inject._
 import play.api.mvc.{ControllerComponents, BodyParsers}

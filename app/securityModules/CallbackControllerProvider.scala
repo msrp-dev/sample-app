@@ -1,4 +1,4 @@
-package modules
+package securityModules
 
 import javax.inject._
 import org.pac4j.play.CallbackController

@@ -1,7 +1,7 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\makot\playsample\app\modules\SecurityComponentsProvider.scala:23:45: method getSessionStore in class Config is deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\makot\playsample\app\securityModules\SecurityComponentsProvider.scala:23:45: method getSessionStore in class Config is deprecated[0m
 [0m[[0m[33mwarn[0m] [0m[0m    val sessionStore: SessionStore = config.getSessionStore[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\makot\playsample\app\modules\SecurityConfigFactory.scala:50:12: method setSessionStore in class Config is deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\makot\playsample\app\securityModules\SecurityConfigFactory.scala:50:12: method setSessionStore in class Config is deprecated[0m
 [0m[[0m[33mwarn[0m] [0m[0m    config.setSessionStore(sessionStore)[0m
 [0m[[0m[33mwarn[0m] [0m[0m           ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

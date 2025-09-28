@@ -14,11 +14,11 @@ GET     /hello                      controllers.HelloController.hello()
 POST    /hello                      controllers.HelloController.helloJson()
 
 # SAML
-GET     /secured                    controllers.SecuredController.index
+GET     /secured                    securityControllers.SecuredController.index
 
-GET     /callback                   controllers.CallbackRouter.callback
-POST    /callback                   controllers.CallbackRouter.callback
+GET     /callback                   securityControllers.CallbackRouter.callback
+POST    /callback                   securityControllers.CallbackRouter.callback
 
 GET     /profile                    controllers.ProfileController.profile
-GET     /logout                     controllers.SecuredController.logout
+GET     /logout                     securityControllers.SecuredController.logout
 

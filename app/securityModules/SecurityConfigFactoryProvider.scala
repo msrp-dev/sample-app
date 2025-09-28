@@ -1,9 +1,9 @@
-package modules
+package securityModules
 
 import javax.inject._
 import play.cache.SyncCacheApi
 import play.libs.concurrent.HttpExecutionContext
-import modules.SecurityConfigFactory
+import securityModules.SecurityConfigFactory
 import play.api.Configuration
 
 @Singleton

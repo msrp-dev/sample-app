@@ -9,6 +9,21 @@ import _root_.controllers.Assets.Asset
 // @LINE:7
 package controllers {
 
+  // @LINE:7
+  class ReverseHomeController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:7
+    def index(): Call = {
+      
+      Call("GET", _prefix)
+    }
+  
+  }
+
   // @LINE:10
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
@@ -56,65 +71,6 @@ package controllers {
     def profile: Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "profile")
-    }
-  
-  }
-
-  // @LINE:19
-  class ReverseCallbackRouter(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:19
-    def callback: Call = {
-    
-      () match {
-      
-        // @LINE:19
-        case ()  =>
-          
-          Call("GET", _prefix + { _defaultPrefix } + "callback")
-      
-      }
-    
-    }
-  
-  }
-
-  // @LINE:7
-  class ReverseHomeController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:7
-    def index(): Call = {
-      
-      Call("GET", _prefix)
-    }
-  
-  }
-
-  // @LINE:17
-  class ReverseSecuredController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:17
-    def index: Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "secured")
-    }
-  
-    // @LINE:23
-    def logout: Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "logout")
     }
   
   }

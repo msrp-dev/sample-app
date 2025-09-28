@@ -1,4 +1,4 @@
-package controllers
+package securityControllers
 
 import javax.inject._
 import scala.concurrent.ExecutionContext
